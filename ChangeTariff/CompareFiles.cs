@@ -35,10 +35,10 @@ namespace UpdatePrices
                         double oldPrice = Double.Parse(splitedLine[5]);
                         if (newPrice != oldPrice)
                         {
-                            double c = newPrice / oldPrice;
-                            double fullAltesPrice = Double.Parse(splitedLine[2]) * c;
-                            double discountOneAltesPrice = Double.Parse(splitedLine[3]) * c;
-                            double discountTwoAltesPrice = Double.Parse(splitedLine[4]) * c;
+                            double c = newPrice - oldPrice;
+                            double fullAltesPrice = c + Double.Parse(splitedLine[2]);
+                            double discountOneAltesPrice = c + Double.Parse(splitedLine[3]);
+                            double discountTwoAltesPrice = c + Double.Parse(splitedLine[4]);
                             string newAltesPrices = fullAltesPrice.ToString("F") + ";" + discountOneAltesPrice.ToString("F") + ";" + discountTwoAltesPrice.ToString("F");
                             _allLinesForNewFile.Add(line + ";" + _formatedBeelineFile[splitedLine[1]] + ";" + newAltesPrices);
                         }

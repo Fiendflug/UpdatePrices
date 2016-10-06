@@ -31,13 +31,9 @@ namespace UpdatePrices
                 FormatNewBeeineFile fromNewBeelineFile = new FormatNewBeeineFile(pathToNewFile);
                 Dictionary<string, string> complexNewTariff = fromNewBeelineFile.RunFormat();
 
-                foreach (KeyValuePair<string, string> kvp in complexNewTariff)
-                {
-                    Console.WriteLine(kvp.Key + "   " + kvp.Value);
-                    //File.AppendAllText(@"ttt.csv", Environment.NewLine + kvp.Key + ";" + kvp.Value, Encoding.UTF8);                
-                }
                 CompareFiles compareObject = new CompareFiles(pathToTargetFile, oldComplexTariff, complexNewTariff);
                 compareObject.CreateDifferentTarifFile();
+
                 Console.WriteLine("Для выхода из приложения нажмите любую клавишу");
                 Console.ReadKey();
             }
