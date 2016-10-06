@@ -7,7 +7,7 @@
     <ProjectGuid>{B98EFDC5-9632-4D96-A5DC-04C1A87B83E3}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>ChangeTariff</RootNamespace>
+    <RootNamespace>UpdatePrices</RootNamespace>
     <AssemblyName>ChangeTariff</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>

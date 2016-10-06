@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
 VisualStudioVersion = 12.0.21005.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChangeTariff", "ChangeTariff\ChangeTariff.csproj", "{B98EFDC5-9632-4D96-A5DC-04C1A87B83E3}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UpdatePrices", "ChangeTariff\UpdatePrices.csproj", "{B98EFDC5-9632-4D96-A5DC-04C1A87B83E3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
